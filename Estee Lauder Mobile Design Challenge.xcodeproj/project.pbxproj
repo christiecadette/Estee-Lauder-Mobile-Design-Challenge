@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A875757326A22A8E00A2C4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875757226A22A8E00A2C4E2 /* AppDelegate.swift */; };
+		A875757526A22A8E00A2C4E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875757426A22A8E00A2C4E2 /* SceneDelegate.swift */; };
+		A875757726A22A8E00A2C4E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875757626A22A8E00A2C4E2 /* ViewController.swift */; };
+		A875757A26A22A8E00A2C4E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875757826A22A8E00A2C4E2 /* Main.storyboard */; };
+		A875757D26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A875757B26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodeld */; };
+		A875757F26A22A8F00A2C4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A875757E26A22A8F00A2C4E2 /* Assets.xcassets */; };
+		A875758226A22A8F00A2C4E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875758026A22A8F00A2C4E2 /* LaunchScreen.storyboard */; };
+		A875758D26A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875758C26A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeTests.swift */; };
+		A875759826A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875759726A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A875758926A22A8F00A2C4E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A875756726A22A8E00A2C4E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A875756E26A22A8E00A2C4E2;
+			remoteInfo = "Estee Lauder Mobile Design Challenge";
+		};
+		A875759426A22A8F00A2C4E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A875756726A22A8E00A2C4E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A875756E26A22A8E00A2C4E2;
+			remoteInfo = "Estee Lauder Mobile Design Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A875756F26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Estee Lauder Mobile Design Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A875757226A22A8E00A2C4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A875757426A22A8E00A2C4E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A875757626A22A8E00A2C4E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A875757926A22A8E00A2C4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A875757C26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Estee_Lauder_Mobile_Design_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		A875757E26A22A8F00A2C4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A875758126A22A8F00A2C4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A875758326A22A8F00A2C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A875758826A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Estee Lauder Mobile Design ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A875758C26A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estee_Lauder_Mobile_Design_ChallengeTests.swift; sourceTree = "<group>"; };
+		A875758E26A22A8F00A2C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A875759326A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Estee Lauder Mobile Design ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A875759726A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estee_Lauder_Mobile_Design_ChallengeUITests.swift; sourceTree = "<group>"; };
+		A875759926A22A8F00A2C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A875756C26A22A8E00A2C4E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A875758526A22A8F00A2C4E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A875759026A22A8F00A2C4E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A875756626A22A8E00A2C4E2 = {
+			isa = PBXGroup;
+			children = (
+				A875757126A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge */,
+				A875758B26A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests */,
+				A875759626A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests */,
+				A875757026A22A8E00A2C4E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A875757026A22A8E00A2C4E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A875756F26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge.app */,
+				A875758826A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests.xctest */,
+				A875759326A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A875757126A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				A875757226A22A8E00A2C4E2 /* AppDelegate.swift */,
+				A875757426A22A8E00A2C4E2 /* SceneDelegate.swift */,
+				A875757626A22A8E00A2C4E2 /* ViewController.swift */,
+				A875757826A22A8E00A2C4E2 /* Main.storyboard */,
+				A875757E26A22A8F00A2C4E2 /* Assets.xcassets */,
+				A875758026A22A8F00A2C4E2 /* LaunchScreen.storyboard */,
+				A875758326A22A8F00A2C4E2 /* Info.plist */,
+				A875757B26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodeld */,
+			);
+			path = "Estee Lauder Mobile Design Challenge";
+			sourceTree = "<group>";
+		};
+		A875758B26A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A875758C26A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeTests.swift */,
+				A875758E26A22A8F00A2C4E2 /* Info.plist */,
+			);
+			path = "Estee Lauder Mobile Design ChallengeTests";
+			sourceTree = "<group>";
+		};
+		A875759626A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A875759726A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeUITests.swift */,
+				A875759926A22A8F00A2C4E2 /* Info.plist */,
+			);
+			path = "Estee Lauder Mobile Design ChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A875756E26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A875759C26A22A8F00A2C4E2 /* Build configuration list for PBXNativeTarget "Estee Lauder Mobile Design Challenge" */;
+			buildPhases = (
+				A875756B26A22A8E00A2C4E2 /* Sources */,
+				A875756C26A22A8E00A2C4E2 /* Frameworks */,
+				A875756D26A22A8E00A2C4E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Estee Lauder Mobile Design Challenge";
+			productName = "Estee Lauder Mobile Design Challenge";
+			productReference = A875756F26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A875758726A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A875759F26A22A8F00A2C4E2 /* Build configuration list for PBXNativeTarget "Estee Lauder Mobile Design ChallengeTests" */;
+			buildPhases = (
+				A875758426A22A8F00A2C4E2 /* Sources */,
+				A875758526A22A8F00A2C4E2 /* Frameworks */,
+				A875758626A22A8F00A2C4E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A875758A26A22A8F00A2C4E2 /* PBXTargetDependency */,
+			);
+			name = "Estee Lauder Mobile Design ChallengeTests";
+			productName = "Estee Lauder Mobile Design ChallengeTests";
+			productReference = A875758826A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A875759226A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87575A226A22A8F00A2C4E2 /* Build configuration list for PBXNativeTarget "Estee Lauder Mobile Design ChallengeUITests" */;
+			buildPhases = (
+				A875758F26A22A8F00A2C4E2 /* Sources */,
+				A875759026A22A8F00A2C4E2 /* Frameworks */,
+				A875759126A22A8F00A2C4E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A875759526A22A8F00A2C4E2 /* PBXTargetDependency */,
+			);
+			name = "Estee Lauder Mobile Design ChallengeUITests";
+			productName = "Estee Lauder Mobile Design ChallengeUITests";
+			productReference = A875759326A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A875756726A22A8E00A2C4E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A875756E26A22A8E00A2C4E2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A875758726A22A8F00A2C4E2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A875756E26A22A8E00A2C4E2;
+					};
+					A875759226A22A8F00A2C4E2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A875756E26A22A8E00A2C4E2;
+					};
+				};
+			};
+			buildConfigurationList = A875756A26A22A8E00A2C4E2 /* Build configuration list for PBXProject "Estee Lauder Mobile Design Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A875756626A22A8E00A2C4E2;
+			productRefGroup = A875757026A22A8E00A2C4E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A875756E26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge */,
+				A875758726A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeTests */,
+				A875759226A22A8F00A2C4E2 /* Estee Lauder Mobile Design ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A875756D26A22A8E00A2C4E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A875758226A22A8F00A2C4E2 /* LaunchScreen.storyboard in Resources */,
+				A875757F26A22A8F00A2C4E2 /* Assets.xcassets in Resources */,
+				A875757A26A22A8E00A2C4E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A875758626A22A8F00A2C4E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A875759126A22A8F00A2C4E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A875756B26A22A8E00A2C4E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A875757726A22A8E00A2C4E2 /* ViewController.swift in Sources */,
+				A875757D26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodeld in Sources */,
+				A875757326A22A8E00A2C4E2 /* AppDelegate.swift in Sources */,
+				A875757526A22A8E00A2C4E2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A875758426A22A8F00A2C4E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A875758D26A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A875758F26A22A8F00A2C4E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A875759826A22A8F00A2C4E2 /* Estee_Lauder_Mobile_Design_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A875758A26A22A8F00A2C4E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A875756E26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge */;
+			targetProxy = A875758926A22A8F00A2C4E2 /* PBXContainerItemProxy */;
+		};
+		A875759526A22A8F00A2C4E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A875756E26A22A8E00A2C4E2 /* Estee Lauder Mobile Design Challenge */;
+			targetProxy = A875759426A22A8F00A2C4E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A875757826A22A8E00A2C4E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A875757926A22A8E00A2C4E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A875758026A22A8F00A2C4E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A875758126A22A8F00A2C4E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A875759A26A22A8F00A2C4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A875759B26A22A8F00A2C4E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A875759D26A22A8F00A2C4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMBTQLJ3N7;
+				INFOPLIST_FILE = "Estee Lauder Mobile Design Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KWK.Estee-Lauder-Mobile-Design-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A875759E26A22A8F00A2C4E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMBTQLJ3N7;
+				INFOPLIST_FILE = "Estee Lauder Mobile Design Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KWK.Estee-Lauder-Mobile-Design-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A87575A026A22A8F00A2C4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMBTQLJ3N7;
+				INFOPLIST_FILE = "Estee Lauder Mobile Design ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KWK.Estee-Lauder-Mobile-Design-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Estee Lauder Mobile Design Challenge.app/Estee Lauder Mobile Design Challenge";
+			};
+			name = Debug;
+		};
+		A87575A126A22A8F00A2C4E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMBTQLJ3N7;
+				INFOPLIST_FILE = "Estee Lauder Mobile Design ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KWK.Estee-Lauder-Mobile-Design-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Estee Lauder Mobile Design Challenge.app/Estee Lauder Mobile Design Challenge";
+			};
+			name = Release;
+		};
+		A87575A326A22A8F00A2C4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMBTQLJ3N7;
+				INFOPLIST_FILE = "Estee Lauder Mobile Design ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KWK.Estee-Lauder-Mobile-Design-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Estee Lauder Mobile Design Challenge";
+			};
+			name = Debug;
+		};
+		A87575A426A22A8F00A2C4E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMBTQLJ3N7;
+				INFOPLIST_FILE = "Estee Lauder Mobile Design ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KWK.Estee-Lauder-Mobile-Design-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Estee Lauder Mobile Design Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A875756A26A22A8E00A2C4E2 /* Build configuration list for PBXProject "Estee Lauder Mobile Design Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A875759A26A22A8F00A2C4E2 /* Debug */,
+				A875759B26A22A8F00A2C4E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A875759C26A22A8F00A2C4E2 /* Build configuration list for PBXNativeTarget "Estee Lauder Mobile Design Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A875759D26A22A8F00A2C4E2 /* Debug */,
+				A875759E26A22A8F00A2C4E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A875759F26A22A8F00A2C4E2 /* Build configuration list for PBXNativeTarget "Estee Lauder Mobile Design ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87575A026A22A8F00A2C4E2 /* Debug */,
+				A87575A126A22A8F00A2C4E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87575A226A22A8F00A2C4E2 /* Build configuration list for PBXNativeTarget "Estee Lauder Mobile Design ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87575A326A22A8F00A2C4E2 /* Debug */,
+				A87575A426A22A8F00A2C4E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A875757B26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A875757C26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodel */,
+			);
+			currentVersion = A875757C26A22A8E00A2C4E2 /* Estee_Lauder_Mobile_Design_Challenge.xcdatamodel */;
+			path = Estee_Lauder_Mobile_Design_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A875756726A22A8E00A2C4E2 /* Project object */;
+}
