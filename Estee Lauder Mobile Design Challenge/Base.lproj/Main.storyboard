@@ -1,24 +1,627 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Estee_Lauder_Mobile_Design_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNY-RS-p4w">
+                                <rect key="frame" x="124" y="196" width="166" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to your Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lst-Ok-OBn">
+                                <rect key="frame" x="81" y="240" width="253" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EL_27" translatesAutoresizingMaskIntoConstraints="NO" id="xLO-ar-V4a">
+                                <rect key="frame" x="-64.5" y="349" width="543" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="543" id="5FS-rg-5Of"/>
+                                    <constraint firstAttribute="height" constant="550" id="im0-ep-iWh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIk-Ov-bGc">
+                                <rect key="frame" x="134" y="312" width="146" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" red="0.82885224454980566" green="0.92306175492661491" blue="0.99385935249393931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KxP-Xl-vZr"/>
+                                    <segue destination="hZd-LH-dtt" kind="show" id="sd8-93-V9T"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1200px-Estée_Lauder_Companies_Logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="llI-42-ng5">
+                                <rect key="frame" x="20" y="823" width="92" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.86837121212121215" green="0.78766570754912246" blue="0.7031107743941063" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="xLO-ar-V4a" secondAttribute="bottom" constant="-37" id="tdm-fr-oT5"/>
+                            <constraint firstItem="xLO-ar-V4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zle-2W-MRu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="xLO-ar-V4a" id="p1f-2h-8D6"/>
+                        <outlet property="esteeLogo" destination="llI-42-ng5" id="Bzr-gD-jvm"/>
+                        <outlet property="text1" destination="fNY-RS-p4w" id="Cdc-pz-s7u"/>
+                        <outlet property="text2" destination="lst-Ok-OBn" id="GMU-Fk-gXx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-378.26086956521743" y="75.669642857142847"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="ybD-nf-5n6">
+            <objects>
+                <viewController id="hZd-LH-dtt" customClass="SecondViewController" customModule="Estee_Lauder_Mobile_Design_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zjx-ei-5Im">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1200px-Estée_Lauder_Companies_Logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="2wK-Ag-Wlb">
+                                <rect key="frame" x="20" y="769" width="92" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Windows_Settings_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jIE-IB-zR3">
+                                <rect key="frame" x="361" y="34" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x7S-vv-Hwv">
+                                <rect key="frame" x="178" y="151" width="166" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Use old foundations and concealers to find your ideal #DoubleWearStay Match products! Explore your perfect "Double Wear Stay in Place" Look.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gy0-Us-9zB">
+                                <rect key="frame" x="178" y="554" width="166" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Be confident in your #DoubleWearStay Look! Browse our favorite #DoubleWearStay Match Looks, get Featured on Match, and enter our latest giveaway.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Neb-Iu-Pkb">
+                                <rect key="frame" x="178" y="351" width="166" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Unsure about your “Double Wear Stay in Place” shade? View people with the same shade in different angles and lighting to find your perfect match.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMc-EN-uPC">
+                                <rect key="frame" x="351" y="206" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392156862745098" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPage1:" destination="hZd-LH-dtt" eventType="touchUpInside" id="gaa-l2-zcG"/>
+                                    <segue destination="4aB-qg-Xz4" kind="show" id="xbJ-4F-BAl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qaf-r9-6vc">
+                                <rect key="frame" x="351" y="609" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPage3:" destination="hZd-LH-dtt" eventType="touchUpInside" id="JdI-4w-EPs"/>
+                                    <segue destination="Fto-NY-eTv" kind="show" id="lpK-w4-mj6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73z-W1-fda">
+                                <rect key="frame" x="351" y="406" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392156862745098" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPage2:" destination="hZd-LH-dtt" eventType="touchUpInside" id="GZm-7g-4no"/>
+                                    <segue destination="oOF-0e-f37" kind="show" id="dcG-IV-Fyj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore Your Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-Ug-6CM">
+                                <rect key="frame" x="63" y="68" width="288" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7UF-9i-qug"/>
+                        <color key="backgroundColor" red="1" green="0.96661136869999997" blue="0.91566594720000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="KQi-1z-V0R"/>
+                    <connections>
+                        <outlet property="esteeLogo" destination="2wK-Ag-Wlb" id="F9v-GN-gBR"/>
+                        <outlet property="settings" destination="jIE-IB-zR3" id="h4M-UP-JQB"/>
+                        <outlet property="text1" destination="x7S-vv-Hwv" id="6gr-tB-kvX"/>
+                        <outlet property="text2" destination="Neb-Iu-Pkb" id="ANV-7I-aO5"/>
+                        <outlet property="text3" destination="gy0-Us-9zB" id="og4-bg-6P6"/>
+                        <outlet property="title1" destination="Ymd-Ug-6CM" id="eYl-C6-AQS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCy-Dg-fKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253.62318840579712" y="75.669642857142847"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="oH2-lu-DO6">
+            <objects>
+                <viewController id="4aB-qg-Xz4" customClass="ThirdViewController" customModule="Estee_Lauder_Mobile_Design_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IcN-dK-vtH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_16" translatesAutoresizingMaskIntoConstraints="NO" id="DoT-NB-xjj">
+                                <rect key="frame" x="-1" y="506" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Windows_Settings_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="34u-zV-ch7">
+                                <rect key="frame" x="352" y="35" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0E-Xd-IDK">
+                                <rect key="frame" x="44" y="33" width="55" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_6" translatesAutoresizingMaskIntoConstraints="NO" id="ZzU-LX-hpm">
+                                <rect key="frame" x="0.0" y="77" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMz-k8-zEV">
+                                <rect key="frame" x="99" y="694" width="216" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Explore Looks">
+                                    <color key="titleColor" red="0.82885224449999995" green="0.92306175489999998" blue="0.99385935250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="exploreButton:" destination="4aB-qg-Xz4" eventType="touchUpInside" id="f99-EC-dOH"/>
+                                    <segue destination="Fto-NY-eTv" kind="show" id="vy9-Yj-K62"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Now that you've found your perfect “Double Wear Stay in Place” Match, explore the perfect look for your next outing." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lyl-E7-MaJ">
+                                <rect key="frame" x="60" y="592" width="295" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-vb-Tot">
+                                <rect key="frame" x="172" y="31" width="70" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.82885224449999995" green="0.92306175489999998" blue="0.99385935250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButton:" destination="4aB-qg-Xz4" eventType="touchUpInside" id="aWG-1p-jcV"/>
+                                    <segue destination="hZd-LH-dtt" kind="show" id="MY5-gT-Axv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Your Perfect Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-LI-LCS">
+                                <rect key="frame" x="65" y="222" width="285" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter the shades of old foundation or concealer products to find your perfect “Double Wear Stay in Place” match." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WtQ-6K-cL3">
+                                <rect key="frame" x="44" y="253" width="328" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y04-8G-NpO">
+                                <rect key="frame" x="45" y="329" width="327" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="productEntryText:" destination="4aB-qg-Xz4" eventType="editingDidEnd" id="klc-es-GXV"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTy-hu-2n7">
+                                <rect key="frame" x="98" y="386" width="216" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Calculate Your Match">
+                                    <color key="titleColor" red="0.82885224449999995" green="0.92306175489999998" blue="0.99385935250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateMatchButton:" destination="4aB-qg-Xz4" eventType="touchUpInside" id="sMw-CH-Q4V"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h3o-Pc-7Jx">
+                                <rect key="frame" x="10" y="432" width="396" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SD7-db-9wJ"/>
+                        <color key="backgroundColor" red="1" green="0.96661136869999997" blue="0.91566594720000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xcD-61-R6F"/>
+                    <connections>
+                        <outlet property="defaultResultText" destination="h3o-Pc-7Jx" id="45G-ux-GDi"/>
+                        <outlet property="logo" destination="T0E-Xd-IDK" id="8Fx-jb-OJg"/>
+                        <outlet property="settings" destination="34u-zV-ch7" id="oBZ-5B-1FP"/>
+                        <outlet property="stripImage1" destination="ZzU-LX-hpm" id="Pv0-nT-pLK"/>
+                        <outlet property="stripImage2" destination="DoT-NB-xjj" id="7If-JC-HSe"/>
+                        <outlet property="subtitle1" destination="WtQ-6K-cL3" id="mrf-jq-2Lt"/>
+                        <outlet property="subtitle2" destination="Lyl-E7-MaJ" id="Npn-JS-tZb"/>
+                        <outlet property="title1" destination="hwN-LI-LCS" id="m4U-cs-hzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqp-SZ-tcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.50724637681162" y="75.669642857142847"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="FiT-Lr-dHp">
+            <objects>
+                <viewController id="oOF-0e-f37" customClass="FourthViewController" customModule="Estee_Lauder_Mobile_Design_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HeI-d5-BSf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-zv-ph2">
+                                <rect key="frame" x="46" y="31" width="55" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_12" translatesAutoresizingMaskIntoConstraints="NO" id="rjQ-3r-46y">
+                                <rect key="frame" x="0.0" y="77" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experience Your Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2e-dk-ZIx">
+                                <rect key="frame" x="63" y="222" width="295" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select the model with your perfect Match to view your “Double Wear Stay in Place” shade in different angles and lighting." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wjc-j0-WTr">
+                                <rect key="frame" x="41" y="253" width="345" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbL-wd-MYA">
+                                <rect key="frame" x="178" y="31" width="70" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.82885224449999995" green="0.92306175489999998" blue="0.99385935250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButton:" destination="oOF-0e-f37" eventType="touchUpInside" id="oiQ-Rg-pQ7"/>
+                                    <segue destination="hZd-LH-dtt" kind="show" id="owV-8W-E68"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Windows_Settings_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="M0L-6o-Aiz">
+                                <rect key="frame" x="348" y="31" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_18" translatesAutoresizingMaskIntoConstraints="NO" id="iQg-Cd-NzD">
+                                <rect key="frame" x="273" y="450" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_22" translatesAutoresizingMaskIntoConstraints="NO" id="M0P-vc-8iR">
+                                <rect key="frame" x="273" y="328" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_24" translatesAutoresizingMaskIntoConstraints="NO" id="gtZ-A9-OwF">
+                                <rect key="frame" x="273" y="572" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_20" translatesAutoresizingMaskIntoConstraints="NO" id="K1G-up-rPc">
+                                <rect key="frame" x="27" y="450" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_19" translatesAutoresizingMaskIntoConstraints="NO" id="39a-Ku-ool">
+                                <rect key="frame" x="27" y="328" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_25" translatesAutoresizingMaskIntoConstraints="NO" id="37S-Ve-JF5">
+                                <rect key="frame" x="150" y="328" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_23" translatesAutoresizingMaskIntoConstraints="NO" id="hcW-ho-Kbz">
+                                <rect key="frame" x="27" y="572" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_21" translatesAutoresizingMaskIntoConstraints="NO" id="Hl2-XY-oDT">
+                                <rect key="frame" x="150" y="450" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_19" translatesAutoresizingMaskIntoConstraints="NO" id="mtq-hO-T28">
+                                <rect key="frame" x="150" y="572" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_25" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-Lu-xvf">
+                                <rect key="frame" x="27" y="694" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_23" translatesAutoresizingMaskIntoConstraints="NO" id="xt1-ic-tPd">
+                                <rect key="frame" x="273" y="694" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_20" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-pO-acZ">
+                                <rect key="frame" x="150" y="694" width="115" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fI4-A4-mtm">
+                                <rect key="frame" x="173" y="757" width="80" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Scroll">
+                                    <color key="titleColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="24t-8i-7xJ"/>
+                        <color key="backgroundColor" red="1" green="0.96661136869999997" blue="0.91566594720000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cf3-vw-tkJ"/>
+                    <connections>
+                        <outlet property="grid1" destination="39a-Ku-ool" id="Woo-px-WVr"/>
+                        <outlet property="grid10" destination="UhI-Lu-xvf" id="LyQ-fA-Vnv"/>
+                        <outlet property="grid11" destination="xcS-pO-acZ" id="JWB-aw-nds"/>
+                        <outlet property="grid12" destination="xt1-ic-tPd" id="XOP-gx-Iwp"/>
+                        <outlet property="grid2" destination="37S-Ve-JF5" id="uXw-B8-kKw"/>
+                        <outlet property="grid3" destination="M0P-vc-8iR" id="VWe-nQ-Fgc"/>
+                        <outlet property="grid4" destination="K1G-up-rPc" id="tNC-tT-wb1"/>
+                        <outlet property="grid5" destination="Hl2-XY-oDT" id="Ur8-HU-qAf"/>
+                        <outlet property="grid6" destination="iQg-Cd-NzD" id="8Xv-n5-oyF"/>
+                        <outlet property="grid7" destination="hcW-ho-Kbz" id="RJ4-fb-qmT"/>
+                        <outlet property="grid8" destination="mtq-hO-T28" id="Qtv-Iy-t9Y"/>
+                        <outlet property="grid9" destination="gtZ-A9-OwF" id="XEK-MG-0ff"/>
+                        <outlet property="logo" destination="cCn-zv-ph2" id="rw8-4h-TxA"/>
+                        <outlet property="scrollPrompt" destination="fI4-A4-mtm" id="W0y-AW-8DX"/>
+                        <outlet property="settings" destination="M0L-6o-Aiz" id="wEe-rf-rE3"/>
+                        <outlet property="stripImage" destination="rjQ-3r-46y" id="QaK-B4-p1s"/>
+                        <outlet property="text1" destination="wjc-j0-WTr" id="hbw-rO-6bt"/>
+                        <outlet property="title1" destination="wjc-j0-WTr" id="e5F-Yt-MQ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6e7-Zp-mzJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521.7391304347827" y="75.669642857142847"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="VGC-s5-8Zk">
+            <objects>
+                <viewController id="Fto-NY-eTv" customClass="FifthViewController" customModule="Estee_Lauder_Mobile_Design_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqM-6P-ThB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Windows_Settings_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="tKW-gi-hGK">
+                                <rect key="frame" x="353" y="31" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt3-Rd-3JW">
+                                <rect key="frame" x="46" y="31" width="55" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_9" translatesAutoresizingMaskIntoConstraints="NO" id="UTM-K2-NhS">
+                                <rect key="frame" x="0.0" y="77" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="181579947_578725089761947_8523334019126990367_n" translatesAutoresizingMaskIntoConstraints="NO" id="3RX-1C-Kpy">
+                                <rect key="frame" x="219" y="257" width="195" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured #DoubleWearStay Match Looks " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlK-zc-TvY">
+                                <rect key="frame" x="16" y="225" width="357" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="171673682_487559242429012_2751663844180652470_n" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-8k-483">
+                                <rect key="frame" x="16" y="440" width="398" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-iw-YQK">
+                                <rect key="frame" x="364" y="421" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="gridScroll:" destination="Fto-NY-eTv" eventType="touchUpInside" id="7Jm-xx-zXb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submit Your #DoubleWearStay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmw-iE-Exr">
+                                <rect key="frame" x="30" y="589" width="371" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E00-MF-ggD">
+                                <rect key="frame" x="36" y="620" width="360" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Submit a link to your best #DoubleWearStay Match Look for a chance to be featured on our Featured looks here on Match! You will automatically be entered into an Estée Lauder giveaway upon submission. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G51-dA-Wiq">
+                                <rect key="frame" x="52" y="706" width="327" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="linkInput:" destination="Fto-NY-eTv" eventType="editingDidEnd" id="Dkd-oP-Jeg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCA-01-0s3">
+                                <rect key="frame" x="107" y="753" width="216" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.82885224449999995" green="0.92306175489999998" blue="0.99385935250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="Fto-NY-eTv" eventType="touchUpInside" id="SpH-A7-Sji"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-jI-jWQ">
+                                <rect key="frame" x="180" y="31" width="70" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.20392158630000001" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.82885224449999995" green="0.92306175489999998" blue="0.99385935250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButton:" destination="Fto-NY-eTv" eventType="touchUpInside" id="KL4-kN-4y2"/>
+                                    <segue destination="hZd-LH-dtt" kind="show" id="V3I-Ie-I0N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaQ-vc-ybT">
+                                <rect key="frame" x="136" y="799" width="159" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="174251705_533403870979857_2638888120523346778_n" translatesAutoresizingMaskIntoConstraints="NO" id="WAs-NG-BiY">
+                                <rect key="frame" x="16" y="258" width="195" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A5r-K0-Jck"/>
+                        <color key="backgroundColor" red="1" green="0.96661136869999997" blue="0.91566594720000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v81-dX-NR4"/>
+                    <connections>
+                        <outlet property="grid1" destination="WAs-NG-BiY" id="tzU-ig-7Gb"/>
+                        <outlet property="grid2" destination="3RX-1C-Kpy" id="xPQ-qQ-eLb"/>
+                        <outlet property="grid3" destination="Lfk-8k-483" id="hCk-xs-nVB"/>
+                        <outlet property="logo" destination="Xt3-Rd-3JW" id="fG3-Ju-z9u"/>
+                        <outlet property="settings" destination="tKW-gi-hGK" id="oi3-JM-s9o"/>
+                        <outlet property="text" destination="E00-MF-ggD" id="zb5-E8-L5w"/>
+                        <outlet property="thankYouText" destination="TaQ-vc-ybT" id="DQU-OW-wcv"/>
+                        <outlet property="title1" destination="GlK-zc-TvY" id="l7I-g5-ewa"/>
+                        <outlet property="title2" destination="Pmw-iE-Exr" id="lSh-JV-uel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gf-w0-Dhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2153.6231884057975" y="75.669642857142847"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lpK-w4-mj6"/>
+        <segue reference="owV-8W-E68"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="1200px-Estée_Lauder_Companies_Logo.svg" width="1200" height="719"/>
+        <image name="171673682_487559242429012_2751663844180652470_n" width="1080" height="1265"/>
+        <image name="174251705_533403870979857_2638888120523346778_n" width="1080" height="1079"/>
+        <image name="181579947_578725089761947_8523334019126990367_n" width="1080" height="1350"/>
+        <image name="EL_12" width="1080" height="1080"/>
+        <image name="EL_16" width="1080" height="1080"/>
+        <image name="EL_18" width="1080" height="1080"/>
+        <image name="EL_19" width="1080" height="1080"/>
+        <image name="EL_20" width="1080" height="1080"/>
+        <image name="EL_21" width="1080" height="1080"/>
+        <image name="EL_22" width="1080" height="1080"/>
+        <image name="EL_23" width="1080" height="1080"/>
+        <image name="EL_24" width="1080" height="1080"/>
+        <image name="EL_25" width="1080" height="1080"/>
+        <image name="EL_27" width="1080" height="1080"/>
+        <image name="EL_6" width="3600" height="2025"/>
+        <image name="EL_9" width="1080" height="1080"/>
+        <image name="Windows_Settings_app_icon" width="2295" height="2295"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
